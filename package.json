@@ -1,0 +1,12 @@
+{
+  "name": "demo-1",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "^3.4.3",
+    "axios": "^0.18.0",
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
+}
