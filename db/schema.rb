@@ -10,36 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180413123437) do
+ActiveRecord::Schema.define(version: 20180529124414) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "companies", force: :cascade do |t|
-    t.string "name"
-    t.string "adress"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id"
-    t.index ["user_id"], name: "index_products_on_user_id"
+    t.string "tagline"
+    t.string "url"
+    t.string "category"
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "first_name"
-    t.integer "age"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "last_name"
-    t.bigint "company_id"
-    t.index ["company_id"], name: "index_users_on_company_id"
-  end
-
-  add_foreign_key "products", "users"
-  add_foreign_key "users", "companies"
 end

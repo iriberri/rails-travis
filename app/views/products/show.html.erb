@@ -1,0 +1,17 @@
+<div class="container text-center">
+  <h1 style="font-size: 18px;">Le détail du produit</h1>
+  <h2 style="font-size: 15px;">
+    <%= @product[:name] %>
+    <span class="label label-default">
+      <%= @product[:category] %>
+    </span>
+  </h2>
+  <h3 style="font-size: 13px;">
+    <%= @product[:url] %>
+  </h3>
+  <div>
+    <%= link_to "éditer", edit_product_path(@product), class: "btn btn-primary" %>
+    <%= link_to "Delete", product_path(@product), method: :delete, class: "btn btn-danger" %>
+    <%= link_to "revenir à la liste", products_path, class: "btn btn-primary" %>
+  </div>
+</div>

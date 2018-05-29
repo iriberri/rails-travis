@@ -1,0 +1,6 @@
+<%= simple_form_for @product do |f| %>
+  <%= f.input :name, label: "Nom du produit", placeholder: "test" %>
+  <%= f.input :url, label: "Url du produit", placeholder: "http://www.google.com" %>
+  <%= f.input :category, collection: ["tech", "education", "design"], prompt: "Which Category"%>
+  <%= f.button :submit, "Ajouter", class:"btn btn-primary" %>
+<% end %>

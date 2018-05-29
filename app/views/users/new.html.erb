@@ -1,7 +1,0 @@
-<div id="app">
-    <input type="text" name="user[first_name]" v-model="firstName"> {{firstName}}
-    <button @click="submit()">Envoyer</button>
-</div>
-<% content_for :after_js do %>
-    <%= javascript_pack_tag 'user' %>
-    <% end %>
