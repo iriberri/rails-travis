@@ -12,6 +12,11 @@
         <span class="label label-default">
           <%= product.category %>
         </span>
+        <% if product.user %>
+          <p>
+            <%= product.user.email %>
+          </p>
+        <% end %>
       </li>
     <% end %>
   </ul>
