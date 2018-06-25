@@ -1,24 +1,18 @@
 language: node_js
-node_js:
-  - 7.2.1
 cache:
-  - ~/.npm
-  - ~/.cache
+  directories:
+    - ~/.npm
+    - ~/.cache
 addons:
   postgresql: "9.4"s
 before_install:
-  - pwd
-  - rvm install 2.2.4
-  - gem install bundler
-  - nvm install 7.2.1
-  - npm install cypress --save-dev
-install:
-  - pwd
-  - rvm install 2.2.4
-  - gem install bundler
-  - nvm install 7.2.1
-  - npm install cypress --save-dev
+  - bundle install
+  - nvm install node
+  - npm install
+  - node -v
 before_script:
   - psql -c 'create database test_db;' -U postgres
+install:
+  - npm install cypress --save-dev
 script:
   - $(npm bin)/cypress run --record
