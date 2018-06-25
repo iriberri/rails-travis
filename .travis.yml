@@ -1,5 +1,10 @@
 language: ruby
-rvm:
-  - 2.2
-  - jruby
-  - rbx-3
+cache:
+  directories:
+      - ~/.npm
+      - ~/.cache
+install:
+  - bundle install
+  - npm ci
+script:
+  - $(npm bin)/cypress run
