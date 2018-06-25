@@ -8,7 +8,7 @@ context('Window', () => {
     //connection
     cy.get('[href="/users/sign_in"]').click();
     cy.get('#user_email').then(($input) => {
-      $input.val('joffrey@gmail.com')
+      $input.val('user1@gmail.com')
     });
     cy.get('#user_password').then(($input) => {
       $input.val('testtest')
