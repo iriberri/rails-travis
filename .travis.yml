@@ -7,4 +7,4 @@ install:
   - bundle install
   - npm ci
 script:
-  - $(npm bin)/cypress run
+  - $(npm bin)/cypress runa
