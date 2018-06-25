@@ -3,7 +3,7 @@
 context('Window', () => {
   beforeEach(() => {
     //connect on website
-    cy.visit('http://localhost:3000/');
+    cy.visit('http://127.0.0.1:3000/');
     
     //connection
     cy.get('[href="/users/sign_in"]').click();
