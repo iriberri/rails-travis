@@ -5,7 +5,7 @@ addons:
   postgresql: "10.3"
 before_install:
   - gem install bundler
-  - bundle installs
+  - bundle install
 cache:
   directories:
     - ~/.npm
