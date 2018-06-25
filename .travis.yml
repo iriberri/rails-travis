@@ -1,15 +1,16 @@
 language: ruby
 cache:
   directories:
-      - ~/.npm
-      - ~/.cache
-script:
-  - $(npm bin)/cypress run
+    - ~/.npm
+    - ~/.cache
+before_script:
+  - psql -c 'create database github_test;' -U postgres
+  - "bundle exec rails s -p 3000 -b 127.0.0.1"x
 install:
   - bundle install
   - nvm install node
   - npm install
   - node -v
-  - npm i -g yarn
-  - yarn
-  - yarn add cypress --save-dev
+  - npm ci
+script:
+  $(npm bin)/cypress run --record
