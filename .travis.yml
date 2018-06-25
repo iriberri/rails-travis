@@ -28,12 +28,6 @@ install:
   - npm install
   - npm install ci
   - npm install cypress
-before_script:
-  # My Rails app lives in a subdirectory. I want to make sure that
-  # my database is ready before I start running RSpec tests
-  - psql -c 'create database moovcheckout_test;' -U postgres
-  # I use separate database.yml config for Travis CI - it's super simple
-  - cp webapp/config/database.travis.yml webapp/config/database.yml
 script:
   # `test` target executes `bundle exec rspec spec` and `npm run test`
   # in all appropriate subdirectories
