@@ -13,5 +13,8 @@ cache:
     - "node_modules"
 install:
   - npm install
+before_script:
+  - rails server &
+  - sleep 20
 script:
   - $(npm bin)/cypress run
