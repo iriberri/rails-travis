@@ -1,16 +1,44 @@
+# As of writing this (7/4/2015) Travis CI only supports one language per project
+# However, every box comes with Node.js and Ruby pre-installed.
+# On top of it, you can install custom programs/libraries in the the `before_script` or 'before_install`
+# stages.
+# The easiest approach is to go with Node.js box and install approprtiate Ruby version
+# or vice-versa
 language: node_js
+node_js:
+  # pick your version of Node.js
+  - 9.11.1
+addons:
+  postgresql: "10.3s"
+# For now every Node.js box comes with Ruby 1.9.3 by default
+# Let's make sure we can install Ruby 2.4.1
+before_install:
+  # Check that default ruby changes after `rvm install` step
+  - ruby --version
+  - rvm install 2.4.1
+  - ruby --version
 cache:
   directories:
     - ~/.npm
     - ~/.cache
-before_install:
-  - bundle install
-before_script:
-  - psql -c 'create database test_db;' -U postgres
+    - "node_modules"
 install:
-  - npm install cypress --save-dev
-  - nvm install node
+  # run whatever you have to do here. I have Makefile that lets you install
+  # all Node.js-related or Ruby-related dependencies as one step.
   - npm install
-  - node -v
+  - npm install ci
+  - npm install cypress
+before_script:
+  # My Rails app lives in a subdirectory. I want to make sure that
+  # my database is ready before I start running RSpec tests
+  - psql -c 'create database moovcheckout_test;' -U postgres
+  # I use separate database.yml config for Travis CI - it's super simple
+  - cp webapp/config/database.travis.yml webapp/config/database.yml
 script:
+  # `test` target executes `bundle exec rspec spec` and `npm run test`
+  # in all appropriate subdirectories
   - $(npm bin)/cypress run --record
+
+
+
+
