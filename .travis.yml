@@ -4,14 +4,7 @@ node_js:
 env:
   - DB=pgsql
 addons:
-  apt:
-    packages:
-      - postgresql-10
-      - postgresql-client-10
-    postgresql: 10
-env:
-  global:
-    - PGPORT=5433
+  postgresql: "9.4"
 services:
   - postgresql
 postgres:
@@ -20,7 +13,10 @@ postgres:
   username: postgres
 before_install:
   - gem install bundler
+  - gem update --system
   - bundle install
+rvm:
+  - 2.5.0
 cache:
   bundler: true
   directories:
@@ -33,4 +29,6 @@ before_script:
   - rails server &
   - psql -c 'create database MY_APP_test;' -U postgres
 script:
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - bundle exec rake db:test:prepare
   - $(npm bin)/cypress run
