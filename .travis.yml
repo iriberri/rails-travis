@@ -11,6 +11,6 @@ install:
   - nvm install node
   - npm install
   - node -v
-  - npm ci
+  - npm install cypress --save-dev
 script:
   $(npm bin)/cypress run --record
