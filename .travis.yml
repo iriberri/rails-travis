@@ -20,6 +20,6 @@ before_script:
   - rails server &
   - psql -c 'create database MY_APP_test;' -U postgres
 script:
-  - sleep 20
+  - sleep 30
   - bundle exec rake db:seed
   - $(npm bin)/cypress run
