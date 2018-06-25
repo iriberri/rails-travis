@@ -1,23 +1,13 @@
 language: node_js
 node_js:
   - 9.11.1
-env:
-  - DB=pgsql
-addons:
-  postgresql: "9.4"
 services:
   - postgresql
-postgres:
-  adapter: postgresql
-  database: MY_APP_test
-  username: postgres
 before_install:
   - gem install bundler
-  - gem update --system
   - bundle install
-rvm:
-  - 2.5.0
 cache:
+  yarn: true
   bundler: true
   directories:
     - ~/.npm
@@ -25,10 +15,10 @@ cache:
     - "node_modules"
 install:
   - npm install
+  - gem install rails
 before_script:
   - rails server &
-  - psql -c 'create database MY_APP_test;' -U postgres
+  - psql -c 'create database travis_ci_test;' -U postgres
 script:
-  - RAILS_ENV=test bundle exec rake db:migrate --trace
-  - bundle exec rake db:test:prepare
+  - rails db:migrate
   - $(npm bin)/cypress run
