@@ -8,9 +8,9 @@
 
 #Product.destroy_all
 
-joffrey = User.create!(email: 'joffrey@gmail.com', password: 'testtest')
-emma = User.create!(email: 'emma@gmail.com', password: 'testtest')
+user1 = User.create!(email: 'user1@gmail.com', password: 'testtest')
+user2 = User.create!(email: 'user2@gmail.com', password: 'testtest')
 
-Product.create!(user: joffrey, name: "Pullover", url: "https://www.google.com", tagline: "Tinder for job search", category: "tech")
-Product.create!(user: joffrey, name: "T-shirt", url: "https://www.google.fr", tagline: "Youtube sucks for education", category: "education")
-Product.create!(user: emma, name: "Pantalon", url: "https://www.asos.com", tagline: "hello world", category: "design")
+Product.create!(user: user1, name: "Pullover", url: "https://www.google.com", tagline: "Tinder for job search", category: "tech")
+Product.create!(user: user1, name: "T-shirt", url: "https://www.google.fr", tagline: "Youtube sucks for education", category: "education")
+Product.create!(user: user2, name: "Pantalon", url: "https://www.asos.com", tagline: "hello world", category: "design")
