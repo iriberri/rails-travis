@@ -8,10 +8,10 @@ context('Window', () => {
     //connection
     cy.get('[href="/users/sign_in"]').click();
     cy.get('#user_email').then(($input) => {
-      $input.val('test@test.com')
+      $input.val('joffrey@gmail.com')
     });
     cy.get('#user_password').then(($input) => {
-      $input.val('azertyuiop')
+      $input.val('testtest')
     });
     cy.get('.btn').click();
   })
