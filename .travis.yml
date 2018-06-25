@@ -21,4 +21,5 @@ before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
 script:
   - rails db:migrate
+  - bundle exec rake db:seed
   - $(npm bin)/cypress run
