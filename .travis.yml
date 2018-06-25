@@ -3,8 +3,13 @@ cache:
   directories:
       - ~/.npm
       - ~/.cache
+script:
+  - $(npm bin)/cypress run
 install:
   - bundle install
-  - npm ci
-script:
-  - $(npm bin)/cypress runa
+  - nvm install node
+  - npm install
+  - node -v
+  - npm i -g yarn
+  - yarn
+  - yarn add cypress --save-dev
