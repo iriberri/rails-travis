@@ -3,14 +3,13 @@ cache:
   directories:
     - ~/.npm
     - ~/.cache
-before_script:
-  - psql -c 'create database github_test;' -U postgres
-  - bundle exec rails s -p 3000 -b 127.0.0.1"
-install:a
+script:
+  - $(npm bin)/cypress run
+install:
   - bundle install
   - nvm install node
   - npm install
   - node -v
-  - npm install cypress --save-dev
-script:
-  - $(npm bin)/cypress run --record
+  - npm i -g yarn
+  - yarn
+  - yarn add cypress --save-dev
