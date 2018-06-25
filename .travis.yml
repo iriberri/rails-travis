@@ -18,8 +18,8 @@ install:
   - npm install
 before_script:
   - rails server &
-  - psql -c 'create database MY_APP_test;' -U postgres
+  - sleep 20
+  - psql -c "CREATE DATABASE MY_APP_test;" -U postgres
 script:
-  - sleep 30
   - bundle exec rake db:seed
   - $(npm bin)/cypress run
