@@ -5,9 +5,7 @@ addons:
   postgresql: "10.3"
 before_install:
   - gem install bundler
-  - bundle install
-before_script:
-- cp config/database.yml.travis config/database.yml
+  - bundle installs
 cache:
   directories:
     - ~/.npm
