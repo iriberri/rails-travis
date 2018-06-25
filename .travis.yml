@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - 9.11.1
+env:
+  - DB=pgsql
 addons:
   postgresql: "9.4"
 services:
@@ -18,8 +20,9 @@ install:
   - npm install
 before_script:
   - rails server &
-  - sleep 20
-  - psql -c "CREATE DATABASE MY_APP_test;" -U postgres
+  - psql -c 'create database MY_APP_test;' -U postgres
 script:
-  - bundle exec rake db:seed
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - bundle exec rake db:test:prepare
+  - bundle exec rake
   - $(npm bin)/cypress run
