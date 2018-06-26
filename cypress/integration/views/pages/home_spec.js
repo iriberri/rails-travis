@@ -16,32 +16,14 @@ context('Window', () => {
     cy.get('.btn').click();
   })
 
-  describe('Testing URL', () => {
-    it('can access to url', () => {
-      cy.visit('http://127.0.0.1:3000/users/sign_in');
-    });
-  });
-
-  describe('Testing Connection', () => {
-    it('can access to connect', () => {
-      cy.get('[href="/users/sign_in"]').click();
-      cy.get('#user_email').then(($input) => {
-        $input.val('user1@gmail.com')
-      });
-      cy.get('#user_password').then(($input) => {
-        $input.val('testtest')
-      });
-      cy.get('#new_user').submit()
-      // if (cy.get('.alert.alert-warning')) {
-      //   return 'Invalid Email or password'
-      // }
-    });
-  });
-
-  describe('Testing Home', () => {
+  describe('Testing', () => {
     it('can i have Hello Worl', () => {
       cy.get('#app').contains('Hello World')
     });
+    it('All products', () => {
+      cy.get('.btn').click()
+      cy.get('h1').contains('Mes produits')
+    });
   });
-
+  
 });
