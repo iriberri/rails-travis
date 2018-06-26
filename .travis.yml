@@ -15,7 +15,6 @@ cache:
     - "node_modules"
 install:
   - npm install
-  - gem install rails
 before_script:
   - rails server &
   - psql -c 'create database travis_ci_test;' -U postgres
