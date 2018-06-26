@@ -32,14 +32,14 @@ context('Window', () => {
         $input.val('testtest')
       });
       cy.get('#new_user').submit()
-      if (cy.get('.alert.alert-warning')) {
-        return 'Invalid Email or password'
-      }
+      // if (cy.get('.alert.alert-warning')) {
+      //   return 'Invalid Email or password'
+      // }
     });
   });
 
   describe('Testing Home', () => {
-    it('can i have Hello Worl add numbers', () => {
+    it('can i have Hello Worl', () => {
       cy.get('#app').contains('Hello World')
     });
   });
