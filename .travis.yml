@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - 9.11.1
+addons:
+  postgresql: "9.4"
 services:
   - postgresql
 before_install:
@@ -11,7 +13,6 @@ cache:
   bundler: true
   directories:
     - ~/.cache
-    - "node_modules"
 install:
   - yarn add cypress
 before_script:
