@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-  - 9.11.1
+  - 10
 addons:
   postgresql: "9.4"
 services:
   - redis-server
   - postgresql
 cache:
-  yarn: true
   bundler: true
   directories:
+    - ~/.npm
     - ~/.cache
 env:
   - BUNDLE_GEMS__CONTRIBSYS__COM=79aa1ad6:74b84d60
@@ -17,11 +17,11 @@ before_install:
   - gem install bundler
   - bundle install
 install:
-  - npm install --save-dev cypress@3.0.2
+  - npm ci
 before_script:
   - rails server -p 3000 -b 127.0.0.1 &
   - psql -c 'create database travis_ci_test;' -U postgres
   - rails db:migrate
   - RAILS_ENV=test bundle exec rake db:seed
 script:
-  - node_modules/.bin/cypress run
+  - $(npm bin)/cypress run
