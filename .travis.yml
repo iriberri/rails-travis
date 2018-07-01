@@ -6,9 +6,6 @@ addons:
 services:
   - redis-server
   - postgresql
-before_install:
-  - gem install bundler
-  - bundle install
 cache:
   yarn: true
   bundler: true
@@ -16,12 +13,15 @@ cache:
     - ~/.cache
 env:
   - BUNDLE_GEMS__CONTRIBSYS__COM=79aa1ad6:74b84d60
+before_install:
+  - gem install bundler
+  - bundle install
 install:
-  - yarn add cypress
+  - npm install --save-dev cypress@3.0.2
 before_script:
-  - rails server &
+  - rails server -p 3000 -b 127.0.0.1 &
   - psql -c 'create database travis_ci_test;' -U postgres
   - rails db:migrate
   - RAILS_ENV=test bundle exec rake db:seed
 script:
-  - $(yarn bin)/cypress run
+  - node_modules/.bin/cypress run
