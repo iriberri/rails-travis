@@ -17,7 +17,7 @@ before_install:
   - gem install bundler
   - bundle install
 install:
-  - npm i cypress
+  - yarn add cypress
 before_script:
   - rails server -p 3000 -b 127.0.0.1 &
   - psql -c 'create database travis_ci_test;' -U postgres
@@ -25,4 +25,4 @@ before_script:
   - RAILS_ENV=test bundle exec rake db:seed
   # - rails db:migrate
 script:
-  - $(npm bin)/cypress run
+  - $(yarn bin)/cypress run
