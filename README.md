@@ -1,4 +1,4 @@
-## R.O.R PostGreSql Cypress on TRAVIS 
+## R.O.R Postgresql Cypress on TRAVIS 
 
 This is a small project based on **Ruby On Rails** with **Postgresql** / **Cypress** and turn on **Travis**
 
