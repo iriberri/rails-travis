@@ -7,12 +7,11 @@ gem 'puma'
 gem 'pg', '~> 0.21.0'
 gem 'redis'
 #uncomment this part
-gem 'figaro'
-gem 'jbuilder'
+# gem 'figaro'
+# gem 'jbuilder'
 # gem 'lazily'
-
 gem 'sass-rails'
-gem 'jquery-rails'
+# gem 'jquery-rails'
 gem 'uglifier'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
@@ -39,13 +38,13 @@ gem 'erubis'
 # # gem 'ruby-progressbar'
 # gem 'shopify_app'
 # # gem 'scout_apm'
-gem 'order_as_specified'
+# gem 'order_as_specified'
 # gem 'omniauth-shopify-oauth2'
 # # gem 'ean'
 # gem 'forest_liana'
 
 # Direct upload from browser to S3
-gem 's3_direct_upload'
+# gem 's3_direct_upload'
 
 # Memcached client
 gem 'dalli'
