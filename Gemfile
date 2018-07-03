@@ -23,7 +23,7 @@ gem 'dalli'
 gem 'hashie'
 
 # Parallel processing
-# gem 'parallel' ##
+gem 'parallel' ##
 
 # Handle large uploads
 gem 'rails-assets-resumablejs', source: 'http://rails-assets.org'

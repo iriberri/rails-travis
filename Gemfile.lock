@@ -769,6 +769,7 @@ DEPENDENCIES
   mixpanel-ruby
   momentjs-rails
   paper_trail
+  parallel
   pg (~> 0.21.0)
   pretender
   pry-byebug
