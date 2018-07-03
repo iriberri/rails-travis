@@ -1,22 +1,4 @@
 GIT
-  remote: https://github.com/MatthiasRMS/rails_admin
-  revision: a01f0986f9d526fc3663bc6263a3cdd3dcd0ce68
-  specs:
-    rails_admin (1.1.1)
-      builder (~> 3.1)
-      coffee-rails (~> 4.0)
-      font-awesome-rails (>= 3.0, < 5)
-      haml (~> 4.0)
-      jquery-rails (>= 3.0, < 5)
-      jquery-ui-rails (~> 5.0)
-      kaminari (>= 0.14, < 2.0)
-      nested_form (~> 0.3)
-      rack-pjax (>= 0.7)
-      rails (>= 4.0, < 6)
-      remotipart (~> 1.3)
-      sass-rails (>= 4.0, < 6)
-
-GIT
   remote: https://github.com/sinatra/sinatra
   revision: 180158b725b8a964711ef8bdb3c8cbaf53d2e6a3
   specs:
@@ -51,10 +33,6 @@ GEM
       rack-test (~> 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionpack-action_caching (1.2.0)
-      actionpack (>= 4.0.0, < 6)
-    actionpack-page_caching (1.1.0)
-      actionpack (>= 4.0.0, < 6)
     actionview (5.1.0)
       activesupport (= 5.1.0)
       builder (~> 3.1)
@@ -97,8 +75,6 @@ GEM
       selectize-rails (~> 0.6)
     ancestry (3.0.2)
       activerecord (>= 3.2.0)
-    archive-zip (0.11.0)
-      io-like (~> 0.3.0)
     arel (8.0.0)
     ast (2.4.0)
     autoprefixer-rails (8.6.4)
@@ -116,7 +92,6 @@ GEM
       axlsx (>= 2.0.1)
     bcrypt (3.1.12)
     benchmark-ips (2.7.2)
-    bindex (0.5.0)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.7)
@@ -124,16 +99,6 @@ GEM
       sass (>= 3.3.4)
     builder (3.2.3)
     byebug (10.0.2)
-    capybara (2.15.1)
-      addressable
-      mini_mime (>= 0.1.3)
-      nokogiri (>= 1.3.3)
-      rack (>= 1.0.0)
-      rack-test (>= 0.5.4)
-      xpath (~> 2.0)
-    capybara-selenium (0.0.6)
-      capybara
-      selenium-webdriver
     carrierwave (1.2.3)
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
@@ -141,24 +106,12 @@ GEM
     carrierwave_backgrounder (0.0.2)
     case_transform (0.2)
       activesupport
-    childprocess (0.9.0)
-      ffi (~> 1.0, >= 1.0.11)
-    chromedriver-helper (1.2.0)
-      archive-zip (~> 0.10)
-      nokogiri (~> 1.8)
     cocoon (1.2.11)
     codeclimate-engine-rb (0.4.1)
       virtus (~> 1.0)
     coderay (1.1.2)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
-    coffee-rails (4.2.2)
-      coffee-script (>= 2.2.0)
-      railties (>= 4.0.0)
-    coffee-script (2.4.1)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     connection_pool (2.2.2)
     crass (1.0.4)
@@ -356,8 +309,6 @@ GEM
     fog-xml (0.1.3)
       fog-core
       nokogiri (>= 1.5.11, < 2.0.0)
-    font-awesome-rails (4.7.0.4)
-      railties (>= 3.2, < 6.0)
     font-awesome-sass (5.0.13)
       sassc (>= 1.11)
     formatador (0.2.5)
@@ -377,8 +328,6 @@ GEM
       actionpack (>= 3.0)
       multi_json
       request_store (>= 1.0)
-    haml (4.0.7)
-      tilt
     hashie (3.5.7)
     htmlentities (4.3.4)
     http (3.0.0)
@@ -391,19 +340,17 @@ GEM
       domain_name (~> 0.5)
     http-form_data (2.1.1)
     http_parser.rb (0.6.0)
-    httpclient (2.8.3)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
     inflecto (0.0.2)
-    io-like (0.3.0)
     ipaddress (0.8.3)
     jaro_winkler (1.5.1)
     jquery-rails (4.3.3)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
-    jquery-ui-rails (5.0.5)
+    jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
     json (2.1.0)
     jsonapi-renderer (0.2.0)
@@ -466,7 +413,6 @@ GEM
     multi_json (1.13.1)
     multipart-post (2.0.0)
     mustermann (1.0.2)
-    nested_form (0.3.2)
     net-http-digest_auth (1.4.1)
     net-http-persistent (3.0.0)
       connection_pool (~> 2.2)
@@ -510,15 +456,7 @@ GEM
     puma (3.11.4)
     pundit (1.1.0)
       activesupport (>= 3.0.0)
-    pusher (1.3.1)
-      httpclient (~> 2.7)
-      multi_json (~> 1.0)
-      pusher-signature (~> 0.1.8)
-    pusher-signature (0.1.8)
     rack (2.0.5)
-    rack-pjax (1.0.0)
-      nokogiri (~> 1.5)
-      rack (>= 1.1)
     rack-proxy (0.6.4)
       rack
     rack-test (0.6.3)
@@ -540,7 +478,6 @@ GEM
     rails-assets-chartjs (2.7.2)
     rails-assets-dropzone (5.1.1)
     rails-assets-fuse.js (3.2.1)
-    rails-assets-intro.js (2.9.3)
     rails-assets-jqgrid (5.3.1)
       rails-assets-jquery (>= 1.7.0)
       rails-assets-jquery-ui (>= 1.7.0)
@@ -591,7 +528,6 @@ GEM
       kwalify (~> 0.7.0)
       parser (>= 2.5.0.0, < 2.6)
       rainbow (>= 2.0, < 4.0)
-    remotipart (1.4.2)
     request_store (1.4.1)
       rack (>= 1.4)
     responders (2.4.0)
@@ -668,9 +604,6 @@ GEM
       ffi (~> 1.9.6)
       sass (>= 3.3.0)
     selectize-rails (0.12.4.1)
-    selenium-webdriver (3.8.0)
-      childprocess (~> 0.5)
-      rubyzip (~> 1.0)
     sentry-raven (2.7.4)
       faraday (>= 0.7.6, < 1.0)
     sidekiq (5.1.3)
@@ -736,11 +669,6 @@ GEM
     vuejs-rails (2.5.13)
     warden (1.2.7)
       rack (>= 1.0)
-    web-console (3.6.2)
-      actionview (>= 5.0)
-      activemodel (>= 5.0)
-      bindex (>= 0.4.0)
-      railties (>= 5.0)
     webpacker (3.3.1)
       activesupport (>= 4.2)
       rack-proxy (>= 0.6.1)
@@ -750,15 +678,11 @@ GEM
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
     xml-simple (1.1.5)
-    xpath (2.1.0)
-      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  actionpack-action_caching
-  actionpack-page_caching
   active_model_serializers (~> 0.10.0)
   activerecord-import (>= 0.2.0)
   administrate
@@ -769,11 +693,8 @@ DEPENDENCIES
   benchmark-ips
   binding_of_caller
   bootstrap-sass
-  capybara (= 2.15.1)
-  capybara-selenium
   carrierwave
   carrierwave_backgrounder
-  chromedriver-helper
   cocoon
   creek
   dalli
@@ -804,7 +725,6 @@ DEPENDENCIES
   mixpanel-ruby
   momentjs-rails
   paper_trail
-  parallel
   pg (~> 0.21.0)
   pretender
   pry-byebug
@@ -812,14 +732,12 @@ DEPENDENCIES
   public_activity
   puma
   pundit
-  pusher
   rack-timeout
   railroady
   rails (= 5.1)
   rails-assets-chartjs!
   rails-assets-dropzone!
   rails-assets-fuse.js!
-  rails-assets-intro.js!
   rails-assets-jqgrid!
   rails-assets-jquery-ui!
   rails-assets-jstree!
@@ -827,7 +745,6 @@ DEPENDENCIES
   rails-assets-resumablejs!
   rails-assets-vue-resource!
   rails-i18n
-  rails_admin!
   rake
   ransack
   redis
@@ -843,7 +760,6 @@ DEPENDENCIES
   rubyXL
   rubyzip (~> 1.1.0)
   sass-rails
-  selenium-webdriver
   sentry-raven
   sidekiq-failures
   sidekiq-pro!
@@ -859,7 +775,6 @@ DEPENDENCIES
   stripe-i18n
   uglifier
   vuejs-rails
-  web-console
   webpacker (~> 3.3.1)
 
 RUBY VERSION
