@@ -23,7 +23,7 @@ gem 'dalli'
 gem 'hashie'
 
 # Parallel processing
-gem 'parallel' ##
+# gem 'parallel' ##
 
 # Handle large uploads
 gem 'rails-assets-resumablejs', source: 'http://rails-assets.org'
@@ -39,7 +39,7 @@ gem 'activerecord-import', '>= 0.2.0'
 gem 'pusher' ##
 
 # Product tour
-gem 'rails-assets-intro.js', source: 'http://rails-assets.org' ##
+# gem 'rails-assets-intro.js', source: 'http://rails-assets.org' ##
 
 # Model versioning
 gem 'paper_trail'
@@ -127,12 +127,11 @@ gem 'levenshtein-ffi', :require => 'levenshtein'
 gem 'mailjet'
 
 # Generate an admin panel
-gem 'rails_admin', git: 'https://github.com/MatthiasRMS/rails_admin' ##
+# gem 'rails_admin', git: 'https://github.com/MatthiasRMS/rails_admin' ##
 gem 'administrate'
 
 # Salesforce client
 gem 'restforce'
-
 
 # HTTP requests
 gem 'rest-client', '>= 2.1.0.rc1'
@@ -175,7 +174,6 @@ gem 'rails-assets-chartjs', source: 'http://rails-assets.org' ##
 # Track actions
 gem 'mixpanel-ruby'
 
-
 # Stripe
 gem 'stripe', source: 'https://rubygems.org'
 gem 'stripe-i18n'
@@ -188,7 +186,7 @@ group :production do
   gem "rack-timeout"
 end
 
- gem 'railroady'
+gem 'railroady'
 
 group :test do
   gem 'rspec-sidekiq'
@@ -209,14 +207,14 @@ group :development, :test do
   gem 'spring'
   gem 'listen', '~> 3.0.5'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'capybara', '2.15.1'
-  gem 'capybara-selenium'
+  # gem 'capybara', '2.15.1'
+  # gem 'capybara-selenium'
   gem 'launchy'
   gem 'letter_opener'
   gem 'simplecov', :require => false
   gem 'rspec-rails', '~> 3.6'
-  gem 'selenium-webdriver'
-  gem 'chromedriver-helper'
+  # gem 'selenium-webdriver'
+  # gem 'chromedriver-helper'
   gem 'spring-commands-rspec'
   gem 'benchmark-ips'
 end
