@@ -6,11 +6,8 @@ gem 'rails', '5.1'
 gem 'puma'
 gem 'pg', '~> 0.21.0'
 gem 'redis'
-# gem 'figaro'
-# gem 'jbuilder'
-# gem 'lazily'
+
 gem 'sass-rails'
-# gem 'jquery-rails'
 gem 'uglifier'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
@@ -19,31 +16,6 @@ gem 'autoprefixer-rails'
 gem 'devise'
 gem 'webpacker', '~> 3.3.1'
 gem 'erubis'
-# gem 'client_side_validations'
-# gem 'client_side_validations-simple_form'
-# gem 'rails-assets-progressbar.js', source: 'http://rails-assets.org'
-# gem 'stringjs-rails'
-# gem 'rails-assets-multi-select', source: 'http://rails-assets.org'
-# gem 'watir'
-# gem 'rails-assets-bootstrap-datepicker', source: 'http://rails-assets.org'
-# gem 'omniauth-oauth2', '~> 1.3.1'
-# # gem 'omniauth-linkedin-oauth2'
-# # gem 'jquery-ui-rails'
-# # gem 'rails-assets-clipboard', source: 'http://rails-assets.org'
-# # gem 'platform-api'
-# gem 'jquery-atwho-rails'
-# # gem 'smarter_csv'
-# # gem 'ruby-progressbar'
-# gem 'shopify_app'
-# # gem 'scout_apm'
-# gem 'order_as_specified'
-# gem 'omniauth-shopify-oauth2'
-# # gem 'ean'
-# gem 'forest_liana'
-
-# Direct upload from browser to S3
-# gem 's3_direct_upload'
-
 # Memcached client
 gem 'dalli'
 
@@ -58,6 +30,7 @@ gem 'rails-assets-resumablejs', source: 'http://rails-assets.org'
 
 # Backend search
 gem 'ransack'
+
 
 # Bulk insert
 gem 'activerecord-import', '>= 0.2.0'
@@ -116,6 +89,7 @@ gem 'simple_token_authentication'
 
 # API pagination
 gem 'kaminari'
+
 
 # Caching
 gem 'actionpack-action_caching' ##
