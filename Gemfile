@@ -207,14 +207,14 @@ group :development, :test do
   gem 'spring'
   gem 'listen', '~> 3.0.5'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  # gem 'capybara', '2.15.1'
-  # gem 'capybara-selenium'
+  gem 'capybara', '2.15.1'
+  gem 'capybara-selenium'
   gem 'launchy'
   gem 'letter_opener'
   gem 'simplecov', :require => false
   gem 'rspec-rails', '~> 3.6'
-  # gem 'selenium-webdriver'
-  # gem 'chromedriver-helper'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
   gem 'spring-commands-rspec'
   gem 'benchmark-ips'
 end
