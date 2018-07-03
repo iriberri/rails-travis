@@ -36,7 +36,7 @@ gem 'ransack'
 gem 'activerecord-import', '>= 0.2.0'
 
 # Websocket
-gem 'pusher' ##
+# gem 'pusher' ##
 
 # Product tour
 # gem 'rails-assets-intro.js', source: 'http://rails-assets.org' ##
@@ -92,8 +92,8 @@ gem 'kaminari'
 
 
 # Caching
-gem 'actionpack-action_caching' ##
-gem 'actionpack-page_caching' ##
+# gem 'actionpack-action_caching' ##
+# gem 'actionpack-page_caching' ##
 # Use Category model as tree model
 gem 'ancestry'
 
@@ -219,4 +219,4 @@ group :development, :test do
   gem 'benchmark-ips'
 end
 
-gem 'web-console', group: :development
+# gem 'web-console', group: :development

@@ -33,10 +33,6 @@ GEM
       rack-test (~> 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionpack-action_caching (1.2.0)
-      actionpack (>= 4.0.0, < 6)
-    actionpack-page_caching (1.1.0)
-      actionpack (>= 4.0.0, < 6)
     actionview (5.1.0)
       activesupport (= 5.1.0)
       builder (~> 3.1)
@@ -96,7 +92,6 @@ GEM
       axlsx (>= 2.0.1)
     bcrypt (3.1.12)
     benchmark-ips (2.7.2)
-    bindex (0.5.0)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.7)
@@ -345,7 +340,6 @@ GEM
       domain_name (~> 0.5)
     http-form_data (2.1.1)
     http_parser.rb (0.6.0)
-    httpclient (2.8.3)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
@@ -462,11 +456,6 @@ GEM
     puma (3.11.4)
     pundit (1.1.0)
       activesupport (>= 3.0.0)
-    pusher (1.3.1)
-      httpclient (~> 2.7)
-      multi_json (~> 1.0)
-      pusher-signature (~> 0.1.8)
-    pusher-signature (0.1.8)
     rack (2.0.5)
     rack-proxy (0.6.4)
       rack
@@ -680,11 +669,6 @@ GEM
     vuejs-rails (2.5.13)
     warden (1.2.7)
       rack (>= 1.0)
-    web-console (3.6.2)
-      actionview (>= 5.0)
-      activemodel (>= 5.0)
-      bindex (>= 0.4.0)
-      railties (>= 5.0)
     webpacker (3.3.1)
       activesupport (>= 4.2)
       rack-proxy (>= 0.6.1)
@@ -699,8 +683,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  actionpack-action_caching
-  actionpack-page_caching
   active_model_serializers (~> 0.10.0)
   activerecord-import (>= 0.2.0)
   administrate
@@ -750,7 +732,6 @@ DEPENDENCIES
   public_activity
   puma
   pundit
-  pusher
   rack-timeout
   railroady
   rails (= 5.1)
@@ -794,7 +775,6 @@ DEPENDENCIES
   stripe-i18n
   uglifier
   vuejs-rails
-  web-console
   webpacker (~> 3.3.1)
 
 RUBY VERSION
