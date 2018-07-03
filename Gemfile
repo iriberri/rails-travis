@@ -8,7 +8,7 @@ gem 'pg', '~> 0.21.0'
 gem 'redis'
 
 gem 'sass-rails'
-gem 'uglifier'
+# gem 'uglifier'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
@@ -17,23 +17,23 @@ gem 'devise'
 gem 'webpacker', '~> 3.3.1'
 gem 'erubis'
 # Memcached client
-gem 'dalli'
+# gem 'dalli'
 
 # Extend Hash Class
-gem 'hashie'
+# gem 'hashie'
 
 # Parallel processing
 # gem 'parallel' ##
 
 # Handle large uploads
-gem 'rails-assets-resumablejs', source: 'http://rails-assets.org'
+# gem 'rails-assets-resumablejs', source: 'http://rails-assets.org'
 
 # Backend search
-gem 'ransack'
+# gem 'ransack'
 
 
 # Bulk insert
-gem 'activerecord-import', '>= 0.2.0'
+# gem 'activerecord-import', '>= 0.2.0'
 
 # Websocket
 # gem 'pusher' ##
@@ -42,65 +42,65 @@ gem 'activerecord-import', '>= 0.2.0'
 # gem 'rails-assets-intro.js', source: 'http://rails-assets.org' ##
 
 # Model versioning
-gem 'paper_trail'
+# gem 'paper_trail'
 
 # Dropzone
-gem 'rails-assets-dropzone', source: 'http://rails-assets.org'
+# gem 'rails-assets-dropzone', source: 'http://rails-assets.org'
 
 # Pass ruby variables to JS
-gem 'gon'
+# gem 'gon'
 
 # Vue.js
 gem 'vuejs-rails'
 gem 'rails-assets-vue-resource', source: 'http://rails-assets.org'
 
 # Background jobs
-source "https://gems.contribsys.com/" do
-  gem 'sidekiq-pro'
-end
-gem 'sidekiq-failures'
-gem 'sinatra', git: 'https://github.com/sinatra/sinatra', require: false
+# source "https://gems.contribsys.com/" do
+#   gem 'sidekiq-pro'
+# end
+# gem 'sidekiq-failures'
+# gem 'sinatra', git: 'https://github.com/sinatra/sinatra', require: false
 
 # Scapping
-gem 'mechanize'
+# gem 'mechanize'
 
 # Fetch privalia's emails
-gem 'gmail'
+# gem 'gmail'
 
 # Client side search
-gem 'rails-assets-lunr.js', source: 'http://rails-assets.org'
-gem 'rails-assets-fuse.js', source: 'http://rails-assets.org'
+# gem 'rails-assets-lunr.js', source: 'http://rails-assets.org'
+# gem 'rails-assets-fuse.js', source: 'http://rails-assets.org'
 
 # Authorization handling
-gem 'pundit'
+# gem 'pundit'
 
 # Nested models forms
-gem 'cocoon'
+# gem 'cocoon'
 
 # # View decorator
 # gem 'activemodel-serializers-xml', git: 'https://github.com/rails/activemodel-serializers-xml'
 # gem 'draper', git: 'https://github.com/drapergem/draper'
 
 # Serializer
-gem 'active_model_serializers', '~> 0.10.0'
+# gem 'active_model_serializers', '~> 0.10.0'
 
 # API token auth
-gem 'simple_token_authentication'
+# gem 'simple_token_authentication'
 
 # API pagination
-gem 'kaminari'
+# gem 'kaminari'
 
 
 # Caching
 # gem 'actionpack-action_caching' ##
 # gem 'actionpack-page_caching' ##
 # Use Category model as tree model
-gem 'ancestry'
+# gem 'ancestry'
 
 # Javascript tree structure
-gem 'rails-assets-jqgrid', source: 'http://rails-assets.org'
-gem 'rails-assets-jquery-ui', source: 'http://rails-assets.org'
-gem 'rails-assets-jstree', source: 'http://rails-assets.org'
+# gem 'rails-assets-jqgrid', source: 'http://rails-assets.org'
+# gem 'rails-assets-jquery-ui', source: 'http://rails-assets.org'
+# gem 'rails-assets-jstree', source: 'http://rails-assets.org'
 
 # Sweet Alert
 # gem 'rails-assets-sweetalert', source: 'http://rails-assets.org'
@@ -109,74 +109,74 @@ gem 'rails-assets-jstree', source: 'http://rails-assets.org'
 # gem 'graphql'
 
 # Image and files upload
-gem 'carrierwave'
-gem 'mini_magick'
-gem 'fog'
-gem 'fog-aws'
-gem 'carrierwave_backgrounder'
+# gem 'carrierwave'
+# gem 'mini_magick'
+# gem 'fog'
+# gem 'fog-aws'
+# gem 'carrierwave_backgrounder'
 
 # Lightbox
-gem 'lightbox2-rails'
+# gem 'lightbox2-rails'
 
 # ETL
-gem 'kiba'
-gem 'fuzzy_match'
-gem 'levenshtein-ffi', :require => 'levenshtein'
+# gem 'kiba'
+# gem 'fuzzy_match'
+# gem 'levenshtein-ffi', :require => 'levenshtein'
 
 # Mailer
-gem 'mailjet'
+# gem 'mailjet'
 
 # Generate an admin panel
 # gem 'rails_admin', git: 'https://github.com/MatthiasRMS/rails_admin' ##
-gem 'administrate'
+# gem 'administrate'
 
 # Salesforce client
-gem 'restforce'
+# gem 'restforce'
 
 # HTTP requests
-gem 'rest-client', '>= 2.1.0.rc1'
+# gem 'rest-client', '>= 2.1.0.rc1'
 
 # i18n Integration
 gem 'rails-i18n'
 gem 'devise-i18n'
 
 # Write Excel files
-gem 'rubyzip', '~> 1.1.0'
-gem 'axlsx', '2.1.0.pre'
-gem 'axlsx_rails'
-gem 'spreadsheet'
-gem 'rubyXL'
+# gem 'rubyzip', '~> 1.1.0'
+# gem 'axlsx', '2.1.0.pre'
+# gem 'axlsx_rails'
+# gem 'spreadsheet'
+# gem 'rubyXL'
 
 # Impersonate user / Log in as another user
-gem 'pretender'
+# gem 'pretender'
 
 # Lodash Js: adds basic functions to Js
-gem 'lodash-rails'
+# gem 'lodash-rails'
 
 # PG Full Text Search
 # gem 'pg_search'
 
 # Importing excel files for adding EANs or References to a flash sale
-gem 'roo', '~> 2.5.0'
-gem 'roo-xls'
-gem 'creek'
+# gem 'roo', '~> 2.5.0'
+# gem 'roo-xls'
+# gem 'creek'
 
 # This gem for Ruby on Rails adds the content of the jQuery FullCalendar plugin from Adam Shaw
-gem 'fullcalendar-rails'
-gem 'momentjs-rails'
+# gem 'fullcalendar-rails'
+# gem 'momentjs-rails'
 
 # For notifications
-gem 'public_activity'
+# gem 'public_activity'
 
 # Charting library
-gem 'rails-assets-chartjs', source: 'http://rails-assets.org' ##
+# gem 'rails-assets-chartjs', source: 'http://rails-assets.org' ##
 
 # Track actions
-gem 'mixpanel-ruby'
+# gem 'mixpanel-ruby'
 
 # Stripe
-gem 'stripe', source: 'https://rubygems.org'
-gem 'stripe-i18n'
+# gem 'stripe', source: 'https://rubygems.org'
+# gem 'stripe-i18n'
 
 group :production do
   # Track errors
@@ -186,7 +186,7 @@ group :production do
   gem "rack-timeout"
 end
 
-gem 'railroady'
+# gem 'railroady'
 
 group :test do
   gem 'rspec-sidekiq'
@@ -196,10 +196,10 @@ end
 
 group :development, :test do
   # Code quality
-  gem 'reek'
-  gem 'rubocop', '>= 0.52.1'
-  gem 'rubocop-airbnb'
-  gem 'factory_bot_rails', '~> 4.0'
+  # gem 'reek'
+  # gem 'rubocop', '>= 0.52.1'
+  # gem 'rubocop-airbnb'
+  # gem 'factory_bot_rails', '~> 4.0'
   # Debug
   gem 'binding_of_caller'
   gem 'pry-byebug'
@@ -211,12 +211,12 @@ group :development, :test do
   # gem 'capybara-selenium'
   gem 'launchy'
   gem 'letter_opener'
-  gem 'simplecov', :require => false
+  # gem 'simplecov', :require => false
   gem 'rspec-rails', '~> 3.6'
   # gem 'selenium-webdriver'
   # gem 'chromedriver-helper'
-  gem 'spring-commands-rspec'
-  gem 'benchmark-ips'
+  # gem 'spring-commands-rspec'
+  # gem 'benchmark-ips'
 end
 
 # gem 'web-console', group: :development
