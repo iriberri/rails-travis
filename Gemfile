@@ -6,7 +6,6 @@ gem 'rails', '5.1'
 gem 'puma'
 gem 'pg', '~> 0.21.0'
 gem 'redis'
-#uncomment this part
 # gem 'figaro'
 # gem 'jbuilder'
 # gem 'lazily'
@@ -20,7 +19,6 @@ gem 'autoprefixer-rails'
 gem 'devise'
 gem 'webpacker', '~> 3.3.1'
 gem 'erubis'
-#uncomment this part
 # gem 'client_side_validations'
 # gem 'client_side_validations-simple_form'
 # gem 'rails-assets-progressbar.js', source: 'http://rails-assets.org'
@@ -53,16 +51,16 @@ gem 'dalli'
 gem 'hashie'
 
 # Parallel processing
-# gem 'parallel'
+gem 'parallel'
 
 # Handle large uploads
-# gem 'rails-assets-resumablejs', source: 'http://rails-assets.org'
+gem 'rails-assets-resumablejs', source: 'http://rails-assets.org'
 
 # Backend search
 gem 'ransack'
 
 # # Bulk insert
-# gem 'activerecord-import', '>= 0.2.0'
+gem 'activerecord-import', '>= 0.2.0'
 
 # Websocket
 gem 'pusher'
@@ -91,7 +89,7 @@ gem 'sidekiq-failures'
 gem 'sinatra', git: 'https://github.com/sinatra/sinatra', require: false
 
 # Scapping
-# gem 'mechanize'
+gem 'mechanize'
 
 # Fetch privalia's emails
 gem 'gmail'
@@ -119,10 +117,9 @@ gem 'simple_token_authentication'
 # API pagination
 gem 'kaminari'
 
-
 # Caching
-# gem 'actionpack-action_caching'
-# gem 'actionpack-page_caching'
+gem 'actionpack-action_caching'
+gem 'actionpack-page_caching'
 # Use Category model as tree model
 gem 'ancestry'
 
@@ -148,9 +145,9 @@ gem 'carrierwave_backgrounder'
 gem 'lightbox2-rails'
 
 # ETL
-# gem 'kiba'
-# gem 'fuzzy_match'
-# gem 'levenshtein-ffi', :require => 'levenshtein'
+gem 'kiba'
+gem 'fuzzy_match'
+gem 'levenshtein-ffi', :require => 'levenshtein'
 
 # Mailer
 gem 'mailjet'
@@ -161,7 +158,6 @@ gem 'administrate'
 
 # Salesforce client
 gem 'restforce'
-
 
 # HTTP requests
 gem 'rest-client', '>= 2.1.0.rc1'
@@ -237,16 +233,16 @@ group :development, :test do
   gem 'spring'
   gem 'listen', '~> 3.0.5'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  # gem 'capybara', '2.15.1'
-  # gem 'capybara-selenium'
-  # gem 'launchy'
-  # gem 'letter_opener'
-  # gem 'simplecov', :require => false
-  # gem 'rspec-rails', '~> 3.6'
-  # gem 'selenium-webdriver'
-  # gem 'chromedriver-helper'
-  # gem 'spring-commands-rspec'
-  # gem 'benchmark-ips'
+  gem 'capybara', '2.15.1'
+  gem 'capybara-selenium'
+  gem 'launchy'
+  gem 'letter_opener'
+  gem 'simplecov', :require => false
+  gem 'rspec-rails', '~> 3.6'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
+  gem 'spring-commands-rspec'
+  gem 'benchmark-ips'
 end
 
 gem 'web-console', group: :development
