@@ -9,7 +9,7 @@ gem 'redis'
 #uncomment this part
 gem 'figaro'
 gem 'jbuilder'
-gem 'lazily'
+# gem 'lazily'
 
 gem 'sass-rails'
 gem 'jquery-rails'
@@ -22,26 +22,26 @@ gem 'devise'
 gem 'webpacker', '~> 3.3.1'
 gem 'erubis'
 #uncomment this part
-gem 'client_side_validations'
-gem 'client_side_validations-simple_form'
-gem 'rails-assets-progressbar.js', source: 'http://rails-assets.org'
-gem 'stringjs-rails'
-gem 'rails-assets-multi-select', source: 'http://rails-assets.org'
-gem 'watir'
-gem 'rails-assets-bootstrap-datepicker', source: 'http://rails-assets.org'
+# gem 'client_side_validations'
+# gem 'client_side_validations-simple_form'
+# gem 'rails-assets-progressbar.js', source: 'http://rails-assets.org'
+# gem 'stringjs-rails'
+# gem 'rails-assets-multi-select', source: 'http://rails-assets.org'
+# gem 'watir'
+# gem 'rails-assets-bootstrap-datepicker', source: 'http://rails-assets.org'
 gem 'omniauth-oauth2', '~> 1.3.1'
-gem 'omniauth-linkedin-oauth2'
-gem 'jquery-ui-rails'
-gem 'rails-assets-clipboard', source: 'http://rails-assets.org'
-gem 'platform-api'
+# gem 'omniauth-linkedin-oauth2'
+# gem 'jquery-ui-rails'
+# gem 'rails-assets-clipboard', source: 'http://rails-assets.org'
+# gem 'platform-api'
 gem 'jquery-atwho-rails'
-gem 'smarter_csv'
-gem 'ruby-progressbar'
+# gem 'smarter_csv'
+# gem 'ruby-progressbar'
 gem 'shopify_app'
-gem 'scout_apm'
+# gem 'scout_apm'
 gem 'order_as_specified'
 gem 'omniauth-shopify-oauth2'
-gem 'ean'
+# gem 'ean'
 gem 'forest_liana'
 
 # Direct upload from browser to S3
@@ -54,16 +54,16 @@ gem 'dalli'
 gem 'hashie'
 
 # Parallel processing
-gem 'parallel'
+# gem 'parallel'
 
 # Handle large uploads
-gem 'rails-assets-resumablejs', source: 'http://rails-assets.org'
+# gem 'rails-assets-resumablejs', source: 'http://rails-assets.org'
 
 # Backend search
 gem 'ransack'
 
-# Bulk insert
-gem 'activerecord-import', '>= 0.2.0'
+# # Bulk insert
+# gem 'activerecord-import', '>= 0.2.0'
 
 # Websocket
 gem 'pusher'
@@ -72,7 +72,7 @@ gem 'pusher'
 # gem 'rails-assets-intro.js', source: 'http://rails-assets.org'
 
 # Model versioning
-gem 'paper_trail'
+gem 'paper_trail', '8.1.0'
 
 # Dropzone
 gem 'rails-assets-dropzone', source: 'http://rails-assets.org'
@@ -92,7 +92,7 @@ gem 'sidekiq-failures'
 gem 'sinatra', git: 'https://github.com/sinatra/sinatra', require: false
 
 # Scapping
-gem 'mechanize'
+# gem 'mechanize'
 
 # Fetch privalia's emails
 gem 'gmail'
@@ -122,15 +122,15 @@ gem 'kaminari'
 
 
 # Caching
-gem 'actionpack-action_caching'
-gem 'actionpack-page_caching'
+# gem 'actionpack-action_caching'
+# gem 'actionpack-page_caching'
 # Use Category model as tree model
 gem 'ancestry'
 
 # Javascript tree structure
-gem 'rails-assets-jqgrid', source: 'http://rails-assets.org'
-gem 'rails-assets-jquery-ui', source: 'http://rails-assets.org'
-gem 'rails-assets-jstree', source: 'http://rails-assets.org'
+# gem 'rails-assets-jqgrid', source: 'http://rails-assets.org'
+# gem 'rails-assets-jquery-ui', source: 'http://rails-assets.org'
+# gem 'rails-assets-jstree', source: 'http://rails-assets.org'
 
 # Sweet Alert
 # gem 'rails-assets-sweetalert', source: 'http://rails-assets.org'
@@ -149,9 +149,9 @@ gem 'carrierwave_backgrounder'
 gem 'lightbox2-rails'
 
 # ETL
-gem 'kiba'
-gem 'fuzzy_match'
-gem 'levenshtein-ffi', :require => 'levenshtein'
+# gem 'kiba'
+# gem 'fuzzy_match'
+# gem 'levenshtein-ffi', :require => 'levenshtein'
 
 # Mailer
 gem 'mailjet'
