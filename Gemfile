@@ -51,7 +51,7 @@ gem 'dalli'
 gem 'hashie'
 
 # Parallel processing
-gem 'parallel'
+gem 'parallel' ##
 
 # Handle large uploads
 gem 'rails-assets-resumablejs', source: 'http://rails-assets.org'
@@ -59,17 +59,17 @@ gem 'rails-assets-resumablejs', source: 'http://rails-assets.org'
 # Backend search
 gem 'ransack'
 
-# # Bulk insert
+# Bulk insert
 gem 'activerecord-import', '>= 0.2.0'
 
 # Websocket
-gem 'pusher'
+gem 'pusher' ##
 
 # Product tour
-# gem 'rails-assets-intro.js', source: 'http://rails-assets.org'
+# gem 'rails-assets-intro.js', source: 'http://rails-assets.org' ##
 
 # Model versioning
-gem 'paper_trail', '8.1.0'
+gem 'paper_trail'
 
 # Dropzone
 gem 'rails-assets-dropzone', source: 'http://rails-assets.org'
@@ -118,15 +118,15 @@ gem 'simple_token_authentication'
 gem 'kaminari'
 
 # Caching
-gem 'actionpack-action_caching'
-gem 'actionpack-page_caching'
+gem 'actionpack-action_caching' ##
+gem 'actionpack-page_caching' ##
 # Use Category model as tree model
 gem 'ancestry'
 
 # Javascript tree structure
-# gem 'rails-assets-jqgrid', source: 'http://rails-assets.org'
-# gem 'rails-assets-jquery-ui', source: 'http://rails-assets.org'
-# gem 'rails-assets-jstree', source: 'http://rails-assets.org'
+gem 'rails-assets-jqgrid', source: 'http://rails-assets.org'
+gem 'rails-assets-jquery-ui', source: 'http://rails-assets.org'
+gem 'rails-assets-jstree', source: 'http://rails-assets.org'
 
 # Sweet Alert
 # gem 'rails-assets-sweetalert', source: 'http://rails-assets.org'
@@ -153,7 +153,7 @@ gem 'levenshtein-ffi', :require => 'levenshtein'
 gem 'mailjet'
 
 # Generate an admin panel
-# gem 'rails_admin', git: 'https://github.com/MatthiasRMS/rails_admin'
+# gem 'rails_admin', git: 'https://github.com/MatthiasRMS/rails_admin' ##
 gem 'administrate'
 
 # Salesforce client
@@ -195,7 +195,7 @@ gem 'momentjs-rails'
 gem 'public_activity'
 
 # Charting library
-gem 'rails-assets-chartjs', source: 'http://rails-assets.org'
+gem 'rails-assets-chartjs', source: 'http://rails-assets.org' ##
 
 # Track actions
 gem 'mixpanel-ruby'
