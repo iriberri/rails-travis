@@ -3,7 +3,7 @@
 // context('Window', () => {
 describe('Testing', () => {
   it('can i access to 127.0.0.1', () => {
-    cy.request('http://127.0.0.1:3000');
+    cy.request('/');
   });
 
   it('can i access to localhost', () => {
