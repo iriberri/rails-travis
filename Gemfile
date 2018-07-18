@@ -23,7 +23,7 @@ gem 'dalli'
 gem 'hashie'
 
 # Parallel processing
-gem 'parallel' ##
+# gem 'parallel' ##
 
 # Handle large uploads
 gem 'rails-assets-resumablejs', source: 'http://rails-assets.org'
@@ -36,7 +36,7 @@ gem 'ransack'
 gem 'activerecord-import', '>= 0.2.0'
 
 # Websocket
-gem 'pusher' ##
+# gem 'pusher' ##
 
 # Product tour
 # gem 'rails-assets-intro.js', source: 'http://rails-assets.org' ##
@@ -92,8 +92,8 @@ gem 'kaminari'
 
 
 # Caching
-gem 'actionpack-action_caching' ##
-gem 'actionpack-page_caching' ##
+# gem 'actionpack-action_caching' ##
+# gem 'actionpack-page_caching' ##
 # Use Category model as tree model
 gem 'ancestry'
 
@@ -207,16 +207,16 @@ group :development, :test do
   gem 'spring'
   gem 'listen', '~> 3.0.5'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'capybara', '2.15.1'
-  gem 'capybara-selenium'
+  # gem 'capybara', '2.15.1'
+  # gem 'capybara-selenium'
   gem 'launchy'
   gem 'letter_opener'
   gem 'simplecov', :require => false
   gem 'rspec-rails', '~> 3.6'
-  gem 'selenium-webdriver'
-  gem 'chromedriver-helper'
+  # gem 'selenium-webdriver'
+  # gem 'chromedriver-helper'
   gem 'spring-commands-rspec'
   gem 'benchmark-ips'
 end
 
-gem 'web-console', group: :development
+# gem 'web-console', group: :development
