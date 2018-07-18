@@ -4,47 +4,18 @@ ruby '2.4.1'
 
 gem 'rails', '5.1'
 gem 'puma'
-gem 'pg', '0.21.0'
-gem 'figaro'
-gem 'jbuilder'
+gem 'pg', '~> 0.21.0'
 gem 'redis'
-gem 'lazily'
 
 gem 'sass-rails'
-gem 'jquery-rails'
 gem 'uglifier'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
-gem 'client_side_validations'
-gem 'client_side_validations-simple_form'
 gem 'autoprefixer-rails'
 gem 'devise'
-gem 'rails-assets-progressbar.js', source: 'http://rails-assets.org'
-gem 'stringjs-rails'
-gem 'rails-assets-multi-select', source: 'http://rails-assets.org'
-gem 'watir'
 gem 'webpacker', '~> 3.3.1'
 gem 'erubis'
-gem 'rails-assets-bootstrap-datepicker', source: 'http://rails-assets.org'
-gem 'omniauth-oauth2', '~> 1.3.1'
-gem 'omniauth-linkedin-oauth2'
-gem 'jquery-ui-rails'
-gem 'rails-assets-clipboard', source: 'http://rails-assets.org'
-gem 'platform-api'
-gem 'jquery-atwho-rails'
-gem 'smarter_csv'
-gem 'ruby-progressbar'
-gem 'shopify_app'
-gem 'scout_apm'
-gem 'order_as_specified'
-gem 'omniauth-shopify-oauth2'
-gem 'ean'
-gem 'forest_liana'
-
-# Direct upload from browser to S3
-gem 's3_direct_upload'
-
 # Memcached client
 gem 'dalli'
 
@@ -52,7 +23,7 @@ gem 'dalli'
 gem 'hashie'
 
 # Parallel processing
-gem 'parallel'
+gem 'parallel' ##
 
 # Handle large uploads
 gem 'rails-assets-resumablejs', source: 'http://rails-assets.org'
@@ -62,16 +33,16 @@ gem 'ransack'
 
 
 # Bulk insert
-gem 'activerecord-import', '0.24.0'
+gem 'activerecord-import', '>= 0.2.0'
 
 # Websocket
-gem 'pusher'
+gem 'pusher' ##
 
 # Product tour
-gem 'rails-assets-intro.js', source: 'http://rails-assets.org'
+# gem 'rails-assets-intro.js', source: 'http://rails-assets.org' ##
 
 # Model versioning
-gem 'paper_trail', '8.1.2'
+gem 'paper_trail'
 
 # Dropzone
 gem 'rails-assets-dropzone', source: 'http://rails-assets.org'
@@ -88,7 +59,6 @@ source "https://gems.contribsys.com/" do
   gem 'sidekiq-pro'
 end
 gem 'sidekiq-failures'
-gem 'sidekiq-status'
 gem 'sinatra', git: 'https://github.com/sinatra/sinatra', require: false
 
 # Scapping
@@ -122,8 +92,8 @@ gem 'kaminari'
 
 
 # Caching
-gem 'actionpack-action_caching'
-gem 'actionpack-page_caching'
+gem 'actionpack-action_caching' ##
+gem 'actionpack-page_caching' ##
 # Use Category model as tree model
 gem 'ancestry'
 
@@ -141,9 +111,9 @@ gem 'rails-assets-jstree', source: 'http://rails-assets.org'
 # Image and files upload
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'fog', '1.40.0'
+gem 'fog'
 gem 'fog-aws'
-gem 'carrierwave_backgrounder', :github => 'lardawge/carrierwave_backgrounder'
+gem 'carrierwave_backgrounder'
 
 # Lightbox
 gem 'lightbox2-rails'
@@ -157,12 +127,11 @@ gem 'levenshtein-ffi', :require => 'levenshtein'
 gem 'mailjet'
 
 # Generate an admin panel
-gem 'rails_admin', git: 'https://github.com/MatthiasRMS/rails_admin'
+# gem 'rails_admin', git: 'https://github.com/MatthiasRMS/rails_admin' ##
 gem 'administrate'
 
 # Salesforce client
 gem 'restforce'
-
 
 # HTTP requests
 gem 'rest-client', '>= 2.1.0.rc1'
@@ -200,11 +169,10 @@ gem 'momentjs-rails'
 gem 'public_activity'
 
 # Charting library
-gem 'rails-assets-chartjs', source: 'http://rails-assets.org'
+gem 'rails-assets-chartjs', source: 'http://rails-assets.org' ##
 
 # Track actions
 gem 'mixpanel-ruby'
-
 
 # Stripe
 gem 'stripe', source: 'https://rubygems.org'
@@ -218,7 +186,7 @@ group :production do
   gem "rack-timeout"
 end
 
- gem 'railroady'
+gem 'railroady'
 
 group :test do
   gem 'rspec-sidekiq'

@@ -21,14 +21,14 @@ install:
 before_script:
   - rails server -p 3000 -b 127.0.0.1 &
   - psql -c 'create database travis_ci_test;' -U postgres
-  - bundle exec rake db:schema:load
-  - bundle exec rake db:seed
-  # - rails server -p 5002 -b 127.0.0.1 &
-  # - RAILS_ENV=test bundle exec rake db:schema:load
-  # - RAILS_ENV=test bundle exec rake db:seed
-  # - rails db:migrate
+  - bundle exec rake db:schema:load RAILS_ENV=test
+  - bundle exec rake db:migrate RAILS_ENV=test 
+script:
+  - $(yarn bin)/cypress run
 after_failure:
   - "echo $RAILS_ENV"
   - "bundle exec rake --version"
-script:
-  - $(yarn bin)/cypress run
+  - "lsof -wni tcp:3000"
+  - "lsof -i tcp:3000"
+  - "lsof -wni tcp:8000"
+  - "fuser 3000/tcp"
